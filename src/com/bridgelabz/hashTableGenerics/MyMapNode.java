@@ -1,9 +1,10 @@
+package com.bridgelabz.hashTableGenerics;
 /*
  * @name: MyMapNode
  * @desc: used to create a node for the hash table.
  */
 
-class MyMapNode<K, V> {
+public class MyMapNode<K, V> {
     K key;
     V value;
 

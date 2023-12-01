@@ -1,6 +1,8 @@
+package com.bridgelabz.hashTableGenerics;
+
 import java.util.LinkedList;
 
-class myHashTable<K, V> {
+public class myHashTable<K, V> {
     private LinkedList<MyMapNode<K, V>>[] buckets;
     private int size;
 

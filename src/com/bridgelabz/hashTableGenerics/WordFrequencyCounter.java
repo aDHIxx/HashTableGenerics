@@ -1,3 +1,5 @@
+package com.bridgelabz.hashTableGenerics;
+
 public class WordFrequencyCounter {
     public static void main(String[] args) {
         String sentence = "To be or not to be";
