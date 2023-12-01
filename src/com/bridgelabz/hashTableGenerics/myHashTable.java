@@ -68,6 +68,27 @@ public class myHashTable<K, V> {
         // Add new key-value pair
         bucket.add(new MyMapNode<>(key, value));
     }
+    /*
+     * @name: remove
+     * @desc: removes a key-value pair from the hash table.
+     * @param: key - the key to remove from the hash table.
+     */
+    public void remove(K key) {
+        int bucketIndex = getBucketIndex(key);
+        LinkedList<MyMapNode<K, V>> bucket = buckets[bucketIndex];
+
+        MyMapNode<K, V> toRemove = null;
+        for (MyMapNode<K, V> node : bucket) {
+            if (node.key.equals(key)) {
+                toRemove = node;
+                break;
+            }
+        }
+
+        if (toRemove != null) {
+            bucket.remove(toRemove);
+        }
+    }
 
     /*
      * @name: printHashTable
